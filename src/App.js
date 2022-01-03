@@ -1,23 +1,39 @@
-import logo from './logo.svg';
+import React from "react";
+import { Routes, Route, NavLink } from "react-router-dom";
+import Home from "./Home";
+import Soda from "./Soda";
+import Chips from "./Chips";
 import './App.css';
+
+
+const NavBar = () => {
+
+  const isActive = (navData) => navData.isActive 
+    ? "active-link" 
+    : "nonActive-link";
+
+  return (
+    <nav className="App-nav">
+      <NavLink className={isActive} to="/">Home</NavLink>
+      <NavLink className={isActive} to="/soda">Soda</NavLink>
+      <NavLink className={isActive} to="/chips">Chips</NavLink>
+    </nav>
+  );
+}
+
+const AppRoutes = () => (
+  <Routes>
+    <Route path="/" element={ <Home /> } />
+    <Route path="/soda" element={ <Soda /> } />
+    <Route path="/chips" element={ <Chips /> } />
+  </Routes>
+);
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar />
+      <AppRoutes />
     </div>
   );
 }
