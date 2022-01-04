@@ -10,9 +10,8 @@ const Home = () => {
         <div className="container">
 
             <FrameBox>
-                <div className="frame">
-                    Blabla
-                </div>
+                <h2>Hello, I am a Vending Machine.</h2>
+                <p>What would you liek to eat ?</p>
             </FrameBox>
 
             <div>
@@ -20,12 +19,10 @@ const Home = () => {
             </div>
 
             <FrameBox>
-                <div className="frame">
-                    <div className="menu">
-                        <p><Link to="/">Home</Link></p>
-                        <p><Link to="/soda">Soda</Link></p>
-                        <p><Link to="/chips">Chips</Link></p>
-                    </div>
+                <div className="menu">
+                    <p><Link to="/">Home</Link></p>
+                    <p><Link to="/soda">Soda</Link></p>
+                    <p><Link to="/chips">Chips</Link></p>
                 </div>
             </FrameBox>
             

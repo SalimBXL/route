@@ -5,7 +5,8 @@
   height: 100vh;
   justify-content: flex-start;
   flex-direction: column;
-  align-items:stretch;
+  align-items: stretch;
+  width: auto;
 }
 
 .App-nav {
