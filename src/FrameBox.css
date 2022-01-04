@@ -1,5 +1,5 @@
 .FrameBox {
-    background-color: rgba(0, 0, 0, 0.337);
+    background-color: rgba(0, 0, 0, 0.4);
     color: whitesmoke;
     border-radius: 5px;
     width: 25%;
@@ -8,6 +8,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 1em;
-    padding: 1em;
+
+    margin: 1rem;
+    padding: 1rem;
+    
 }
